@@ -1,0 +1,26 @@
+
+{
+    "intents": [
+        {
+         "tag": "greeting",
+         "pattern": ["hi there", "how are you", "hey","hola","hello"],
+         "responses": ["hi too", "Am doing fine, what of you?", "hello too", "how can i help","hello, let me help"],
+         "context": []
+        },
+         {
+         "tag": "noanswer",
+         "pattern": [" "],
+         "responses": ["sorry, can't understand you", "please give me more info","Not sure i understand, let me hook you up"],
+         "context": []
+        },
+        {
+         "tag": "goodbye",
+         "pattern": ["Bye", "see you later", "hope to see you around"],
+         "responses": ["see you", "have a nice day", "Bye, it was nice chatting with you"],
+         "context": []     
+        }
+       
+    
+    ]
+
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livin Blogs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" />
+  </head>
+  <body>
+    <header class="app-header">
+      <nav class="grid-container">
+        <div class="navbar-brand">
+          <a href="" class="navbar-item">
+            <!-- <img src="./static/img/1x/1x/1x/Artboard 2.png" alt="logo" /> -->
+            Livin Blog
+          </a>
+        </div>
+        <a class="hamburger" label="menu" role="" id="navbar-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#" class="navbar-item">Home</a>
+            <a href="#" class="navbar-item">Articles</a>
+            <a href="#" class="navbar-item">About</a>
+            <a href="#" class="navbar-item">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <section class="hero-wrap">
+        <div class="grid-container">
+          <article class="--row">
+            <div class="">
+              <h1></h1>
+              <div class="">
+                <article class="">
+                  <h2>Hello! Get the programming blogs from livin,</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus beatae voluptatem in?
+                  </p>
+                </article>
+                <article class="">
+                  <div class="author">
+                    <div class="avatar"></div>
+                  </div>
+                  <div class="">
+                    <h3>Livin</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="">
+        <div class="grid-container">
+          <article class="">
+            <div class="blog_img-bg"></div>
+            <div class="blog-desc">
+              <div class="">
+                <p class="">
+                  <a href="" class=""><span></span></a
+                  ><a href="" class=""><span></span></a
+                  ><a href="" class=""><span></span></a>
+                </p>
+                <h2 class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis a doloribus inventore voluptatibus reprehenderit
+                  aperiam veniam.
+                </h2>
+                <div class="">
+                  <span class=""></span>
+                  <div class="">
+                    <h4>livin livin</h4>
+                    <span>CEO, heuristic inc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="">
+              <a href="" class="">
+                view all articles
+                <span class="fas fa-arrow-right"></span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class=""></footer>
+    <section class="_94vh ">
+      <div class="_94vh_header">
+        <article class="">
+          <div class="">
+            <img src="{{ url_for('static', filename='img/no_accounts_black_36dp.svg') }}" alt="h(x)" />
+          </div>
+        </article>
+        <article class="">
+          <p>Get gym questions answered</p>
+        </article>
+        <article class="">
+          <div class=""></div>
+          <div class="close"><img src="{{ url_for('static', filename='img/close_black_24dp.svg') }}" alt="" /></div>
+        </article>
+      </div>
+      <div class="_94vh_body">
+        <article class="ui-scrollableArea">
+          <div class="wrapper">
+            <section class="chat-component">
+              <div class="bot_respond msg-box">
+                <span>I am h(x),an interactive online assistant &amp; am ready to help</span>
+               <!-- <span class="time">12:45 pm</span>-->
+              </div>
+
+              <ul id="chat-wrapper">
+               <!-- <li class="chat-item">
+                  <div class="chat-img">
+                    <img src="{{ url_for('static', filename='img/no_accounts_black_36dp.svg') }}" alt="avatar" />
+                  </div>
+                  <div class="chat-content">
+                    <div id="sender_desg">you</div>
+                    <div class="chat-box">just a test chat</div>
+                  </div>
+                  <div class="chat-time">12:45 pm</div>
+                </li>-->
+               <!-- <li class="chat-item">
+                  <div class="chat-img">
+                    <img src="{{ url_for('static', filename='img/no_accounts_black_36dp.svg') }}" alt="avatar" />
+                  </div>
+                  <div class="chat-content">
+                    <div id="sender_desg">you</div>
+                    <div class="chat-box bot_respond">just a test chat</div>
+                  </div>
+                  <div class="chat-time">12:45 pm</div>
+                </li>-->
+              </ul>
+
+              <!-- <div class="msg-box sender-msg">
+                <span>hi, just a test</span>
+                <span class="time">12:45 pm</span>
+              </div> -->
+              <!-- <div class="bot_respond msg-box">
+                <span>I am h(x),ready to help</span>
+                <span class="time">12:45 pm</span>
+              </div> -->
+              <div class="loading_anim">
+                <img src="{{ url_for('static', filename='img/loading_gif.gif') }}" alt="loading" />
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class="chat_input-wrapper">
+        <section class="chat_input-inner">
+          <div class="chat_input">
+            <label class="chat_label">
+              <input
+                type="text"
+                class="c-input"
+                placeholder="Ask a question..."
+                id="sender_msg"
+              />
+            </label>
+          </div>
+          <div class="chat_btn">
+            <img src="{{ url_for('static', filename='img/send_black_24dp.svg') }}" alt="send" />
+          </div>
+        </section>
+      </div>
+    </section>
+    <a href="" class="chat_init-btn" id="chat_init">
+      <img src="{{url_for('static', filename='img/contact_support_black_36dp.svg')}}" alt="" />
+    </a>
+  </body>
+  <script>
+     // Create an instance of a db object for us to store the open database in
+    let db;
+    window.onload = function () {
+      // Open our database; it is created if it doesn't already exist
+
+      let request = window.indexedDB.open("chats_db", 1);
+      // onerror handler signifies that the database didn't open successfully
+      request.onerror = function () {
+        console.log("Database failed to open");
+      };
+
+      // onsuccess handler signifies that the database opened successfully
+      request.onsuccess = function () {
+        console.log("Database opened successfully");
+
+        // Store the opened database object in the db variable. This is used a lot below
+        db = request.result;
+
+        // Run the displayData() function to display the notes already in the IDB
+        displayData();
+      };
+      // Setup the database tables if this has not already been done
+      request.onupgradeneeded = function (e) {
+        // Grab a reference to the opened database
+        let db = e.target.result;
+
+        // Create an objectStore to store our notes in (basically like a single table)
+        // including a auto-incrementing key
+        let objectStore = db.createObjectStore("chats_os", {
+          keyPath: "id",
+          autoIncrement: true,
+        });
+
+        // Define what data items the objectStore will contain
+        objectStore.createIndex("user_msg", "user_msg", { unique: false });
+        objectStore.createIndex("bot_res", "bot_res", { unique: false });
+        objectStore.createIndex("msgSentTime", "msgSentTime", {
+          unique: false,
+        });
+        objectStore.createIndex("botResTime", "botResTime", { unique: false });
+
+        console.log("Database setup complete");
+      };
+
+      document.querySelector(".chat_btn").addEventListener("click", (e) => {
+        e.preventDefault();
+        //let msg = do
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        let sender_msg = document.getElementById("sender_msg").value;
+        let data = sender_msg;
+        if (sender_msg !== "") {
+          //show a loading anim
+          document.querySelector(".loading_anim").style.opacity = 1;
+          //create the chat element
+          //createChatElements(sender_msg, time, "sender-msg");
+          console.log(data);
+          fetch(`http://127.0.0.1:5000/get?msg=${data}`, {
+            method: "GET", // or 'PUT'
+            headers: {
+              "Content-Type": "application/json",
+            },
+            // body: JSON.stringify(data),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Success:", data);
+              addData(sender_msg, data, time, date.toLocaleTimeString());
+              document.querySelector(".loading_anim").style.opacity = 0;
+              window.scrollTo(0, document.querySelector('.ui-scrollableArea').scrollHeight)
+             
+              // setTimeout(
+              //   createChatElements(
+              //     data,
+              //     date.toLocaleTimeString(),
+              //     "bot_respond"
+              //   ),
+              //   3000
+              // );
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        } else {
+          alert("field cannot be empty");
+        }
+      });
+    };
+    
+    // Define the addData() function
+    function addData(msg, res, msg_time, bot_res_time) {
+      // grab the values entered into the form fields and store them in an object ready for being inserted into the DB
+      let newItem = {
+        user_msg: msg,
+        bot_res: res,
+        msgSentTime: msg_time,
+        botResTime: bot_res_time,
+      };
+
+      // open a read/write db transaction, ready for adding the data
+      let transaction = db.transaction(["chats_os"], "readwrite");
+
+      // call an object store that's already been added to the database
+      let objectStore = transaction.objectStore("chats_os");
+
+      // Make a request to add our newItem object to the object store
+      let request = objectStore.add(newItem);
+      request.onsuccess = function () {
+        // Clear the input, ready for adding the next entry
+        document.getElementById("sender_msg").value = "";
+        console.log("request to add new object processed succesful");
+      };
+
+      // Report on the success of the transaction completing, when everything is done
+      transaction.oncomplete = function () {
+        console.log("Transaction completed: database modification finished.");
+
+        // update the display of data to show the newly added item, by running displayData() again.
+        displayData();
+      };
+
+      transaction.onerror = function () {
+        console.log("Transaction not opened due to error");
+      };
+    }
+    // Define the displayData() function
+    function displayData() {
+      // Open our object store and then get a cursor - which iterates through all the
+      // different data items in the store
+      let objectStore = db.transaction("chats_os").objectStore("chats_os");
+      objectStore.openCursor().onsuccess = function (e) {
+        // Get a reference to the cursor
+        let cursor = e.target.result;
+
+        // If there is still another data item to iterate through, keep running this code
+        if (cursor) {
+          //destructure
+          const { user_msg, bot_res, msgSentTime, botResTime } = cursor.value;
+          console.log(`retrieved data: ${ JSON.stringify(cursor.value)}`);
+          createChatElements(user_msg, msgSentTime, "sender-msg");
+          createChatElements(bot_res, botResTime, "bot_respond");
+          // Iterate to the next item in the cursor
+          cursor.continue();
+        } else {
+          // if there are no more cursor items to iterate through, say so
+          console.log("Chats all displayed");
+        }
+      };
+    }
+    //delete chats function
+    // Define the deleteItem() function
+    function deleteIDB(databaseName) {
+    
+        var req = indexedDB.deleteDatabase(databaseName);
+        req.onsuccess = function () {
+            console.log("Deleted database successfully");
+        };
+        req.onerror = function () {
+            console.log("Couldn't delete database");
+        };
+        req.onblocked = function () {
+            console.log("Couldn't delete database due to the operation being blocked");
+        };
+    }
+        
+    //end of del()
+    //try deleting the db after 5seconds
+    //window.onbeforeunload = function () {
+     //   deleteIDB("chats_db")
+      //  return null;
+    //};
+    let reset_time = setTimeout(deleteIDB("chats_db"),86400000)
+    clearTimeout(reset_time)
+
+    const createChatElements = (msg, time, cls) => {
+      let chatItem = document.createElement("li");
+      //avatar
+      let chatAvatar = document.createElement("img");
+      chatAvatar.setAttribute("alt", "avatar");
+      chatAvatar.src = "./static/img/no_accounts_black_36dp.svg";
+      let chatImgWrapper = document.createElement("div");
+      chatImgWrapper.setAttribute("class", "chat-img");
+      chatImgWrapper.appendChild(chatAvatar);
+
+      //chat content
+      let chatContent = document.createElement("div");
+      chatContent.setAttribute("class", "chat-content");
+      let senderDesg = document.createElement("div");
+      senderDesg.setAttribute("id", "sender_desg");
+      let chatBox = document.createElement("div");
+      chatBox.setAttribute("class", "chat-box");
+      chatBox.classList.add(cls);
+      let chatTime = document.createElement("div");
+      chatTime.setAttribute("class", "chat-time");
+      chatTime.innerHTML = time;
+
+      let textNode = document.createTextNode(msg);
+
+      chatBox.appendChild(textNode);
+      chatContent.appendChild(senderDesg);
+      chatContent.appendChild(chatBox);
+
+      //chat item => ul
+      chatItem.appendChild(chatImgWrapper);
+      chatItem.appendChild(chatContent);
+      chatItem.appendChild(chatTime);
+
+      document.getElementById("chat-wrapper").appendChild(chatItem);
+    };
+    document.querySelector(".close").addEventListener("click", (e) => {
+      document.querySelector("._94vh").classList.remove("is-active");
+    });
+    document.getElementById("chat_init").addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector("._94vh").classList.contains("is-active")
+        ? document.querySelector("._94vh").classList.remove("is-active")
+        : document.querySelector("._94vh").classList.add("is-active");
+    });
+  </script>
+</html>

@@ -18,6 +18,12 @@
          "pattern": ["Bye", "see you later", "hope to see you around"],
          "responses": ["see you", "have a nice day", "Bye, it was nice chatting with you"],
          "context": []     
+        },
+        {
+         "tag": "gym",
+         "pattern": ["gym location", "what is the importance of exercise?", "open time"],
+         "responses": ["the gym is at main st 123  califonia", "It enhances your health status", "we are open from 5am to 8.30 pm every day"],
+         "context": []
         }
        
     

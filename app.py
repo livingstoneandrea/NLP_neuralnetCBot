@@ -6,6 +6,7 @@ Created on Sun Jul 18 14:46:57 2021
 """
 from chatapp import chatbot_repsonse
 from flask import Flask, render_template, request, jsonify
+import sys
 
 app = Flask(__name__)
 app.static_folder = 'static'
@@ -25,4 +26,10 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    app.run(debug=True) 
+
+    try:
+        port = int(sys.argv[1]) # for a command-line input 5000
+    except:
+        port = 5000 # set the default port the port 5000
+
+    app.run(port=port, debug=True)
